@@ -1,0 +1,93 @@
+*, *::after , *::before{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.formContainer > form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 30vw;
+    height: fit-content;
+    font-size: 1.3rem;
+    padding: 40px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgray;
+    
+
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    height: 40px;
+    font-size: 1.3rem;
+    border: 0;
+    border-bottom: 2px solid gray;
+    /* border-radius: 5px; */
+    outline: none;
+}
+
+select{
+    height: 40px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap:10px;
+    /* border: 1px solid black; */
+}
+
+#confirmButton{
+    font-size: 1.5rem;
+    color: white;
+    background-color:rgb(41, 57, 194);
+    outline: none;
+    border:  none;
+    border-radius: 5px;
+    padding: 7px 20px;
+
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+input:valid{
+    border-bottom:2px solid green;
+}
+
+input:invalid{
+    border-bottom:2px solid red;
+}
+
+.formError{
+    color:red;
+    font-size: 0.8rem;
+}
