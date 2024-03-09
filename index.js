@@ -20,10 +20,13 @@ let selectedPattern ;
 email.addEventListener("input", (event) => {
     if (email.validity.typeMismatch) {
         emailError.innerText = "Please Type a Valid Email id. Ex: john@google.com";
+        email.style.borderBottom = "2px solid red";
     } else if (email.validity.valueMissing) {
         emailError.innerText = "Please Enter Email Id";
+        email.style.borderBottom = "2px solid red";
     } else if (email.validity.valid) {
         emailError.innerText = "";
+        email.style.borderBottom = "2px solid green";
     }
 });
 
@@ -57,8 +60,10 @@ zipcode.addEventListener("input", (event) => {
 password.addEventListener("input",(event)=>{
     if( password.value.length > 10 || password.value.length < 5) {
         passwordError.innerText = " Password Length should be minimum 4 and maximum 10";
+        password.style.borderBottom = "2px solid red";
     }else{
         passwordError.innerText = "";
+        password.style.borderBottom = "2px solid green";
     }
 });
 
